@@ -1,0 +1,42 @@
+.card > *, div[class^="img-card-"] > *, .full-card {
+    transition: all 0.4s ease-in-out;
+}
+
+.full-intro a, .intro a {
+    text-align: center;
+}
+
+.track {
+    transition: translate 0.4s ease-in-out;
+}
+
+body {
+    height:1500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@keyframes append-animate-left {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+        transform: translateX(0);;
+		opacity: 1;	
+	}
+}
+@keyframes append-animate-right {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+        transform: translateX(0);;
+		opacity: 1;	
+	}
+}
+
+.card {
+	animation: append-animate-left .3s linear;
+}
